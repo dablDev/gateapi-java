@@ -8,13 +8,13 @@ import java.util.Map;
 public class GateApiException extends ApiException {
 
     @SerializedName("label")
-    private String errorLabel;
+    public String errorLabel;
 
     @SerializedName("message")
-    private String errorMessage;
+    public String errorMessage;
 
     @SerializedName("detail")
-    private String errorDetail;
+    public String errorDetail;
 
 
     public GateApiException() {

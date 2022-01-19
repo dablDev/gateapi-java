@@ -15,9 +15,9 @@ import java.util.List;
 
 
 public class ApiException extends Exception {
-    private int code = 0;
-    private Map<String, List<String>> responseHeaders = null;
-    private String responseBody = null;
+    public int code = 0;
+    public Map<String, List<String>> responseHeaders = null;
+    public String responseBody = null;
 
     public ApiException() {}
 
