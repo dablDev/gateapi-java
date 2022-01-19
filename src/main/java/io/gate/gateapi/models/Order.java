@@ -25,27 +25,27 @@ import java.io.IOException;
 public class Order {
     public static final String SERIALIZED_NAME_ID = "id";
     @SerializedName(SERIALIZED_NAME_ID)
-    private String id;
+    public String id;
 
     public static final String SERIALIZED_NAME_TEXT = "text";
     @SerializedName(SERIALIZED_NAME_TEXT)
-    private String text;
+    public String text;
 
     public static final String SERIALIZED_NAME_CREATE_TIME = "create_time";
     @SerializedName(SERIALIZED_NAME_CREATE_TIME)
-    private String createTime;
+    public String createTime;
 
     public static final String SERIALIZED_NAME_UPDATE_TIME = "update_time";
     @SerializedName(SERIALIZED_NAME_UPDATE_TIME)
-    private String updateTime;
+    public String updateTime;
 
     public static final String SERIALIZED_NAME_CREATE_TIME_MS = "create_time_ms";
     @SerializedName(SERIALIZED_NAME_CREATE_TIME_MS)
-    private Long createTimeMs;
+    public Long createTimeMs;
 
     public static final String SERIALIZED_NAME_UPDATE_TIME_MS = "update_time_ms";
     @SerializedName(SERIALIZED_NAME_UPDATE_TIME_MS)
-    private Long updateTimeMs;
+    public Long updateTimeMs;
 
     /**
      * Order status  - &#x60;open&#x60;: to be filled - &#x60;closed&#x60;: filled - &#x60;cancelled&#x60;: cancelled
@@ -98,11 +98,11 @@ public class Order {
 
     public static final String SERIALIZED_NAME_STATUS = "status";
     @SerializedName(SERIALIZED_NAME_STATUS)
-    private StatusEnum status;
+    public StatusEnum status;
 
     public static final String SERIALIZED_NAME_CURRENCY_PAIR = "currency_pair";
     @SerializedName(SERIALIZED_NAME_CURRENCY_PAIR)
-    private String currencyPair;
+    public String currencyPair;
 
     /**
      * Order type. limit - limit order
@@ -151,7 +151,7 @@ public class Order {
 
     public static final String SERIALIZED_NAME_TYPE = "type";
     @SerializedName(SERIALIZED_NAME_TYPE)
-    private TypeEnum type = TypeEnum.LIMIT;
+    public TypeEnum type = TypeEnum.LIMIT;
 
     /**
      * Account type. spot - use spot account; margin - use margin account; cross_margin - use cross margin account
@@ -204,7 +204,7 @@ public class Order {
 
     public static final String SERIALIZED_NAME_ACCOUNT = "account";
     @SerializedName(SERIALIZED_NAME_ACCOUNT)
-    private AccountEnum account = AccountEnum.SPOT;
+    public AccountEnum account = AccountEnum.SPOT;
 
     /**
      * Order side
@@ -255,15 +255,15 @@ public class Order {
 
     public static final String SERIALIZED_NAME_SIDE = "side";
     @SerializedName(SERIALIZED_NAME_SIDE)
-    private SideEnum side;
+    public SideEnum side;
 
     public static final String SERIALIZED_NAME_AMOUNT = "amount";
     @SerializedName(SERIALIZED_NAME_AMOUNT)
-    private String amount;
+    public String amount;
 
     public static final String SERIALIZED_NAME_PRICE = "price";
     @SerializedName(SERIALIZED_NAME_PRICE)
-    private String price;
+    public String price;
 
     /**
      * Time in force  - gtc: GoodTillCancelled - ioc: ImmediateOrCancelled, taker only - poc: PendingOrCancelled, makes a post-only order that always enjoys a maker fee - fok: FillOrKill, fill either completely or none
@@ -318,59 +318,59 @@ public class Order {
 
     public static final String SERIALIZED_NAME_TIME_IN_FORCE = "time_in_force";
     @SerializedName(SERIALIZED_NAME_TIME_IN_FORCE)
-    private TimeInForceEnum timeInForce = TimeInForceEnum.GTC;
+    public TimeInForceEnum timeInForce = TimeInForceEnum.GTC;
 
     public static final String SERIALIZED_NAME_ICEBERG = "iceberg";
     @SerializedName(SERIALIZED_NAME_ICEBERG)
-    private String iceberg;
+    public String iceberg;
 
     public static final String SERIALIZED_NAME_AUTO_BORROW = "auto_borrow";
     @SerializedName(SERIALIZED_NAME_AUTO_BORROW)
-    private Boolean autoBorrow;
+    public Boolean autoBorrow;
 
     public static final String SERIALIZED_NAME_AUTO_REPAY = "auto_repay";
     @SerializedName(SERIALIZED_NAME_AUTO_REPAY)
-    private Boolean autoRepay;
+    public Boolean autoRepay;
 
     public static final String SERIALIZED_NAME_LEFT = "left";
     @SerializedName(SERIALIZED_NAME_LEFT)
-    private String left;
+    public String left;
 
     public static final String SERIALIZED_NAME_FILL_PRICE = "fill_price";
     @SerializedName(SERIALIZED_NAME_FILL_PRICE)
-    private String fillPrice;
+    public String fillPrice;
 
     public static final String SERIALIZED_NAME_FILLED_TOTAL = "filled_total";
     @SerializedName(SERIALIZED_NAME_FILLED_TOTAL)
-    private String filledTotal;
+    public String filledTotal;
 
     public static final String SERIALIZED_NAME_FEE = "fee";
     @SerializedName(SERIALIZED_NAME_FEE)
-    private String fee;
+    public String fee;
 
     public static final String SERIALIZED_NAME_FEE_CURRENCY = "fee_currency";
     @SerializedName(SERIALIZED_NAME_FEE_CURRENCY)
-    private String feeCurrency;
+    public String feeCurrency;
 
     public static final String SERIALIZED_NAME_POINT_FEE = "point_fee";
     @SerializedName(SERIALIZED_NAME_POINT_FEE)
-    private String pointFee;
+    public String pointFee;
 
     public static final String SERIALIZED_NAME_GT_FEE = "gt_fee";
     @SerializedName(SERIALIZED_NAME_GT_FEE)
-    private String gtFee;
+    public String gtFee;
 
     public static final String SERIALIZED_NAME_GT_DISCOUNT = "gt_discount";
     @SerializedName(SERIALIZED_NAME_GT_DISCOUNT)
-    private Boolean gtDiscount;
+    public Boolean gtDiscount;
 
     public static final String SERIALIZED_NAME_REBATED_FEE = "rebated_fee";
     @SerializedName(SERIALIZED_NAME_REBATED_FEE)
-    private String rebatedFee;
+    public String rebatedFee;
 
     public static final String SERIALIZED_NAME_REBATED_FEE_CURRENCY = "rebated_fee_currency";
     @SerializedName(SERIALIZED_NAME_REBATED_FEE_CURRENCY)
-    private String rebatedFeeCurrency;
+    public String rebatedFeeCurrency;
 
 
      /**
